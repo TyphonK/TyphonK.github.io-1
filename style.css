@@ -1,0 +1,396 @@
+@font-face{
+	font-family: font1;
+	src:url('1.ttf');
+}
+@font-face{
+	font-family: font2;
+	src:url('2.ttf');
+}
+@font-face{
+	font-family: font3;
+	src:url('3.ttf');
+}
+body{
+	margin:0;
+	background-color: #555;
+}
+#top-menu{
+	top:0;
+	position: sticky;
+	width: 100%;
+	height: 60px;
+	background-color:#000;
+	z-index: 10000;
+	
+}
+.top-menu-btn{
+	display: inline-block;
+    color:#fff;
+    font-size: 35px;
+    height: 40px;
+    padding: 10px;
+    position: relative;
+}
+.box{
+	width: 100%;
+	position: relative;
+}
+#box1-img{
+	width: 100%;
+}
+#box2-img{
+	width: 100%;
+}
+.vec{
+   height: 50%;
+   transition-duration: 200ms;
+   transition-property: 
+
+}
+.top-menu-btn:hover .vec{
+	 transform: rotateX(180deg);
+}
+.border-btn{
+	border:solid #fff 3px;
+	border-radius: 5px;
+	font-size: 35px;
+	color:#fff;
+	padding: 10px;
+	margin: 10px;
+	transition-duration: 200ms;
+	transition-property: padding, margin;
+	text-align:center; 
+    text-shadow:  0 0 10px #20bdb2;
+   
+}
+.box1-title-btn{
+	 display: inline-block;
+
+}
+#box1-title{
+	position: absolute;
+	left:75%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	color:#fff;
+	width:50%;
+	text-align:center;
+	font-size: 35px;
+}
+#box1-title b{
+	font-size: 60px;
+}
+#box1-title a{
+	text-decoration: none;
+}
+.border-btn:hover{
+	padding: 15px;
+	margin:5px;
+}
+.box1-title-btn{
+	display: inline-block;
+}
+#box2-title{
+	position: absolute;
+   	left:25%;
+   	top: 50%;
+   	transform:translate(-50%,-50%);
+   	text-align: center;
+   	font-size: 30px;
+   	color:#fff;
+   	width:50%;
+   	text-shadow: 0 0 5px #000;
+}
+#box2-title a{
+	text-decoration: none;
+}
+#box2-title b{
+	font-size: 50px;
+}
+#box2-title-img{
+  width:200px;
+}
+#box1-title-btn{
+	display: inline-block;
+
+}
+#box2-title-btn{
+	width:150px;
+	left: 0;
+	right: 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+.blue-btn{
+	background-color: #00f;
+	border-color:#00f;
+}
+#footer{
+	background-color: #000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color:#fff;
+	font-size: 30px;
+	text-align: center;
+	box-shadow:  0 0 50px inset;
+}
+#footer a{
+	color:#aaa;
+	
+}
+.footer-a{
+	display: inline-block;
+ 	margin:20px;
+}	
+.middle{
+	height: 5px;
+	width:100%;
+	background: linear-gradient(to right,#863, #222,#400)
+}
+#box1{
+   margin-bottom: -5px;
+}
+#box2{
+  margin-bottom: -5px;
+}
+.tmb-menu{
+	position: absolute;
+	z-index: 1000;
+	top:100%;
+	left:0;  
+	background-color: #000;
+	transition-duration: 200ms;
+	transition-property: transform;
+	transform:  translateY(-50%) scaleY(0) ;/*Yвертикакльна*/
+
+}
+.top-menu-btn:hover .tmb-menu{
+	 transform:  translateY(0)scaleY(1);
+
+}  
+.border-btn a{
+	text-decoration: none;
+}
+.tmb-menu-btn{
+	display: inline-block;
+}
+#tmb1-menu  .tmb-menu-btn{
+	width: 350px;
+}
+#tmb2-menu  .tmb-menu-btn{
+	width: 350px;
+}
+#tmb3-menu  .tmb-menu-btn{
+	width: 350px;
+}
+#box5{
+	background-color: #ddd;
+	height: 1000px;
+}
+.box5-card{
+	background-color: #222;
+	position: absolute;
+	width: 500px;
+	height: 800px;
+	overflow: hidden;
+	top: 100px;
+	color:#fff; 
+	font-size: 50px;
+	text-align: center;
+}
+
+#box5-card1{
+	right: 51%;
+}
+#box5-card2{
+	left: 51%;
+}
+
+.box5-card a{
+	text-decoration:none; 
+}
+.box5-card-img{
+	position:absolute;
+	width:100%;
+	left:0;
+	top:0;
+}
+.box5-card-gradient{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background: linear-gradient(to top,
+        rgba(0,0,64,1) 70%, rgba(0,0,0,0) 90%);
+
+}
+.box5-card-title{
+	position: absolute;
+	width:100%;
+	text-align: center;
+	bottom: 10%;
+}
+.box5-card-title-btn{
+	display: inline-block;
+}
+.triangle{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	display: inline-block;
+}
+.triangle-line{
+	position: absolute;
+   height: 10%;
+   width: 100%;
+   border-radius:2px;
+   background-color: #000;
+}
+.triangle-top{
+	top:22%;
+	left:0; 
+    transform:  rotate(30deg);
+}
+.triangle-bottom{
+	top:68%;
+	left: 0;
+	transform:  rotate(330deg);
+}
+.triangle-left{
+	top:45%;
+	left: -40%;
+	transform:  rotate(90deg);
+
+}
+#box6{
+ padding-top:100px;
+ padding-bottom: 100px;
+ background-color: #111;
+ color:#fff;
+ text-align: center;
+}
+#box6-more{
+   position: relative;
+   display: inline-block;
+   width: 800px;
+   font-size: 35px;
+   text-align: left;
+   vertical-align: top;
+   margin-right: 35px;
+ }
+#box6-simple{
+  position: relative;
+   display: inline-block;
+   width: 400px;
+   min-height: 500px;
+   background-color:#eee;/*0123456789abcdef  цвета*/
+   color:#000;
+}
+#box6-simple-btns{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: #bbb;
+}
+.box6-simple-btn{
+	font-size: 35px;
+	position:absolute;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#box6-simple-btn1{
+	width:120px;
+	left:0;
+	background-color: #ddd;
+}
+#box6-simple-btn2{
+	width:120px;
+	left:120px;
+	border-bottom: solid #000 1px;
+	
+}
+#box6-simple-btn3{
+	width:160px;
+	left:240px;
+	border-bottom: solid #000 1px;
+}
+.box6-simple-main-img{
+	width: 100%
+}
+#box6-simple-main{
+	padding-top: 2px;
+}
+#box6-more1{
+
+ font-family: font1;
+}
+#box6-more2{
+  display: none;
+ font-family: font2;
+}
+#box6-more3{
+	display: none;
+	font-family: font3;
+}
+#box6-simple-main2{
+	display: none;
+}
+#box6-simple-main3{
+	display: none;
+}
+#box7{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #111;
+     text-align: center;
+}
+.box7-card{
+	position: relative;
+  height: 700px;
+  width: 400px;
+  background-color: #333;
+  margin:10px;
+  display: inline-block;
+  transition-property: transform, box-shadow;
+  transition-duration: 200ms;
+  overflow: hidden;
+}
+.box7-card:hover{
+	transform: translateY(-10px);
+    box-shadow:0 20px 20px  #000;
+    
+}
+.box7-card-img{
+	width: 100%;
+}
+#top{
+	height: 30px;
+     text-align: right;
+     background-color: #111;
+     z-index: 10;
+}
+.top-img{
+ height: 30px;
+}
+.box7-card-date{
+  text-align: left;
+  font-family:fantasy;
+  color:#ff0;
+  font-size: 20px;
+}
+.box7-card-name{
+	text-align: left;
+	font-size:30px;
+	color:#ddd;
+}
+.box7-card-info{
+	text-align: center;
+	font-size: 20px;
+	color:#ddd;
+}
+.box7-card-text{
+	
+}
